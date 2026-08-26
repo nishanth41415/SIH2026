@@ -1,0 +1,8 @@
+{
+  "name": "QDS Sentinel",
+  "description": "Quantum-Inspired Cyber Threat Detection for Digital Signature Security (SIH26141) - Operations Center & Teleportation Verification Simulator",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

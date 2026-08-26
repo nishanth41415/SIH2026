@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #05070A;
+    color: #cbd5e1;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Elegant Dark scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05070A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Subtle glow animations for quantum states */
+@keyframes quantum-pulse {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
+  }
+  50% {
+    opacity: 0.75;
+    filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.2));
+  }
+}
+
+.animate-quantum-pulse {
+  animation: quantum-pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes threat-pulse {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(244, 63, 94, 0.6));
+  }
+  50% {
+    opacity: 0.75;
+    filter: drop-shadow(0 0 2px rgba(244, 63, 94, 0.2));
+  }
+}
+
+.animate-threat-pulse {
+  animation: threat-pulse 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
